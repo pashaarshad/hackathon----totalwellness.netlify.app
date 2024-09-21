@@ -1,0 +1,775 @@
+
+ /* ********************************* ROOT ********************************** */
+
+:root{
+   --a-color:black;
+   --nav-color: #ffffff;
+   --arshad-color : rgb(224, 19, 53);       /****  #00ff00; */
+}
+p{
+    color: var(--a-color);
+}
+.cormorant-upright-light {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-regular {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-medium {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-semibold {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cormorant-upright-bold {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: darkgr; */
+    color: white;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+/* ********************************************************* NAV BAR ****************************************** */
+header{
+    top: 0px;
+    /* background-color: var(--nav-colorbg); */
+    background-image: url(assets/img/bestbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 18vh;
+    width: auto;
+      box-shadow: 0 4px 60px -1px white, 0 2px 4px -2px white;
+      animation: moveUpAndDown 4s ease forwards;
+}
+body {
+    background-image: url(assets/img/indexbgmaintf.jpg);
+    width: auto;
+    background-position: center;
+   
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+}
+ .navLeft{
+    margin-top: 0.5%;
+    width: 40%;
+    display: flex;
+    color: var(--arshad-color);
+    text-align: center;
+    
+}
+.navLeft h1{
+    margin-top: 3.3%;
+    margin-left: 0.5%;
+    color: var(--arshad-color);
+    
+}
+
+.navLeft img{
+  height: 80px;
+  width: 80px;   
+  border-radius: 50%;
+  margin-left: 0.5%;
+  margin-bottom: 0.4%;
+  margin-right: 2%;
+
+}
+.navRight{
+    margin-top: 2%;
+    width: 50%;
+
+}
+ ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.act{
+    color: var(--arshad-color);
+}
+/* header nav .navRight ul li {
+   
+    
+
+} */
+ ul li a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-weight: 600;
+    
+
+}
+
+  ul li a:hover{
+    cursor: pointer;
+    color:var(--arshad-color);
+    transition: 0.2s;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+.menuBtn, .closeBtn{
+    font-size: 30px;
+    display: none;
+    color: #edbb99 ;
+}
+.menuBtn{
+    float: right;
+    font-size: 30px;
+    display: none;
+   
+}
+
+#memu{
+    display: none;
+}
+
+/* ***********************************************************NAV BAR END ************************************** */
+
+
+/* ************************************************** MEDIA FOR NAV **************************** */
+/* 
+ */
+
+ @media (max-width:  820px){
+
+    .menuBtn{
+        display: block;
+    }
+     ul {
+
+        display: none;
+        color: black;
+        
+        
+    }
+    nav ul li a{
+        color: black;
+    }
+     ul li {
+        display: block;
+        color: black;
+    }
+   #menu {
+        display: none;
+        background-image: url(assets/img/dev_colorbg.jpg);
+        position: fixed;
+        left: 0%;
+      
+        top: 81px;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        line-height: 50px;
+        transition: 2s;
+        /* transform: matrix(1,3); */
+        
+    }
+  
+}
+
+
+/* *************************** END OF THE RESPONSIVESSS ************************************** */
+
+
+
+/* *********************************INDEX ALSO  */
+/* ************************************AUTO TEXT ***************************************** */
+.indexCon{
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: auto;
+    border-radius: 1% ;
+    height: 500px;
+    margin: 2%;
+    /* background-image: url(assets/img/bgindex.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* box-shadow: 0px 0px 0px var(--arshad-color), 8px -8px 0px var(--arshad-color); */
+}
+.indexLeft{
+    justify-content: center;
+    width: 40%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: 1px solid rgb(209, 240, 35);
+    padding: 2rem;
+    border-radius: 5%;
+    background-image: url(assets/img/dev_colorbg.jpg);
+  
+    box-shadow: 5px 5px 14px black, -20px -25px 14px black;
+    border: 12px;
+    
+}
+
+ .coloring , .auto-type { 
+    color: var(--a-color);
+}
+
+.indexRight{
+    width: 40%;
+    float: right;
+}
+.indexRight img{
+    height: 400px;
+    width: 450px;
+    border-radius: 80px;
+    box-shadow: 20px 25px 20px black, 0px -5px 0px black;
+    margin-top: 6%;
+}
+
+
+/* **************************** index media *************** */
+
+@media (max-width:  820px ) {
+
+    .indexCon{
+        /* border: 1px solid rgb(0, 0, 0); */
+        width: auto;
+        border-radius: 1% ;
+        height: 500px;
+        margin: 2%;
+        margin-left: 15%;
+        /* background-image: url(assets/img/bgindex.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        /* box-shadow: 0px 0px 0px var(--arshad-color), 8px -8px 0px var(--arshad-color); */
+    }
+    .indexLeft{
+        justify-content: center;
+        width: 70%;
+        
+        margin-top: 10%;
+        margin-left: 10%;
+        border: 1px solid rgb(209, 240, 35);
+        padding: 2rem;
+        border-radius: 5%;
+        background-image: url(assets/img/dev_colorbg.jpg); 
+        
+      
+        box-shadow: 5px 5px 14px black, -20px -25px 14px black;
+        border: 12px;
+        
+    }
+    .indexRight{
+        width: 40%;
+        margin-right: 40%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+       
+     
+    }
+
+    .indexRight img{
+        height: 200px;
+        width: 200px;
+        border-radius: 80px;
+        box-shadow: 20px 25px 20px black, 0px -5px 0px black;
+        margin-top: 8%;
+    }
+   
+}
+
+/* ********************************************** home img  ******************* */
+
+.homeimh{
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 5%;
+    float: left;
+   
+
+}
+.homeimh img{
+    height: 400px;
+    width: 80%;
+    border-radius: 80px;
+    box-shadow: 15px 15px 15px black, 0px -5px 14px black;
+}
+.hometext{
+    float: right;
+    width: 40%;
+   margin-top: 2%;
+    margin-right: 5%;
+    line-height: 30px;
+
+}
+.hometext h2{
+    color: var(--a-color);
+
+}
+.homemain2{
+    border: 1px solid rgb(0, 0, 0);
+    width: auto;
+    height: 520px;
+    margin: 2%;
+    box-shadow:  -12px 10px 10px var(--arshad-color),  0px 0px 0px var(--arshad-color);
+    justify-content: center;
+}
+.homemain2 h1{
+    margin-left: 40%;
+    color: var(--arshad-color);
+    margin-top: 3%;
+}
+
+
+/* **********************************************HOME MEDA ******************************** */
+@media (max-width:  820px ) {
+
+
+    .homeimh img{
+        height: 200px;
+        width: 80%;
+        border-radius: 80px;
+        box-shadow: 15px 15px 15px black, 0px -5px 14px black;
+    }
+
+    .hometext{
+    
+        width: 40%;
+       margin-top: 2%;
+        margin-right: 5%;
+        line-height: 30px;
+    
+    }
+    .hometext{
+        
+        width: 90%;
+       margin-top: 2%;
+        margin-right: 5%;
+        line-height: 30px;
+    
+    }
+    .homemain2{
+        border: 1px solid rgb(0, 0, 0);
+        margin-top: 12%;
+        width: auto;
+        height: 700px;
+        margin: 2%;
+        box-shadow:  -12px 10px 10px var(--arshad-color),  0px 0px 0px var(--arshad-color);
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .navtext{
+        font-size: 19px;
+    }
+
+}
+
+
+   
+/* ******************************************* end 2 section of home ********************** */
+
+
+/* ****************************************************************imgs puting slides very imp ****************** */
+
+.imgsCon{
+    height: 400px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(assets/img/twopersons.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation-name:myani;
+    animation-duration:18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 30px;
+    margin-bottom: 5%;
+  
+    
+
+
+}
+
+@keyframes myani{
+    0% {background-image: url(assets/img/logo.webp);}
+    
+     75% {background-image: url(assets/img/thoughtD.jpg);}
+     85%{ background-image: url(assets/img/2.webp);}
+     95%{ background-image: url(assets/img/thoughtD6.jpg);}
+     35% {background-image: url(assets/img/totalimg.jpg);}
+
+    
+}
+
+.imgsCon:hover{
+    box-shadow:  20px 20px 20px var(--arshad-color),  10px 10px 10px var(--arshad-color);
+
+}
+
+/* ****************************** FOother bottem is not only center is used ************************* */
+
+
+
+
+/* *************************************** ABOUT TEXT ********************************* */
+
+.aboutcon{
+    width: 75vw;
+    
+    margin: auto;
+}
+
+.abouttext{
+    /* border: 1px solid red; */
+    height: 30vh;
+    
+    border-radius: 12px;
+    margin-top:5%;
+    box-shadow: 20px 18px 12px rgb(0, 0, 0), 0px -5px 14px rgb(6, 184, 255);
+}
+
+
+.abouttext:hover{
+    box-shadow: 20px 18px 12px var(--arshad-color), 0px -5px 14px var(--arshad-color);
+    
+}
+.abouttext h2{
+    color: var(--arshad-color);
+    margin-bottom: 1%;
+
+}
+.abouttext p{
+    width: 70vw;;
+    text-justify: auto;
+    font-size: 18px;
+    color: var(--a-color);
+   
+}
+
+/* *********************************** about media  ************************ */
+@media (max-width:  820px ) {
+    .abouttext h2{
+        color: var(--arshad-color);
+        margin-bottom: 1%;
+        font-size: 20px;
+    
+    }
+
+    .abouttext p{
+        width: 70vw;;
+        text-justify: auto;
+        font-size: 18px;
+        color: var(--a-color);
+       
+    }
+
+    .abouttext{
+        /* border: 1px solid red; */
+        height: 55vh;
+        
+        border-radius: 12px;
+        margin-top:5%;
+        box-shadow: 20px 18px 12px rgb(0, 0, 0), 0px -5px 14px rgb(6, 184, 255);
+    }
+}
+
+
+footer{
+    margin-top: 6%;
+}
+
+/* ****************************************contact ****************** */
+
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    /* background-color: black; */
+    background-image: url(img/bgok.html);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container:hover{
+    box-shadow: 0 0 10px var(--arshad-color);
+}
+
+@media (max-width:  820px ){
+
+    .container {
+        max-width: 300px;
+        margin: 50px auto;
+        /* background-color: black; */
+        background-image: url(img/bgok.html);
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(252, 223, 223, 0.2);
+    }
+
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:var(--a-color);
+    }
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--a-color);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit {
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--arshad-color);
+}
+
+/* ************************************* live /*********************** */
+
+
+.liveCon{
+
+    height: 400px;
+    border-radius: 7px;
+    width: 80%;
+    margin-top: 5%;
+    box-shadow: 20px 18px 12px rgb(96, 183, 214), 0px -5px 14px rgb(99, 165, 190);
+    justify-content: center;
+
+}
+.liveL{
+    /* border: 1px solid blue; */
+    width: 90%;
+    float:left;
+    height: 200px;
+    margin-bottom: 5%;
+}
+.liveR img{
+    margin-top: 2%;
+    height: 90%;
+    width: 70%;
+    border-radius: 7%;
+    margin-bottom: 20%;
+
+}
+
+.liveCon:hover{
+  
+    box-shadow: 20px 18px 12px var(--a-color), 0px -5px 14px var(--a-color);
+    cursor: pointer;
+
+}
+.liveL h2{
+    color: var(--a-color);
+    font-size: 30px;
+
+}
+.liveL  p{
+    font-size: large;
+}
+.liveR{
+    /* border: 1px solid blue; */
+    
+    width: 0%;
+    float:right;
+    height: 200px;
+    margin-bottom: 10%;
+    justify-content: center;
+    justify-items: center;
+    
+   
+}
+
+
+/* ******************************** Live *************************** */
+@media (max-width:  820px ){
+    .liveCon{
+
+        height: 1190px;
+        border-radius: 7px;
+        width: 80%;
+        margin-top: 5%;
+        box-shadow: 20px 18px 12px rgb(96, 183, 214), 0px -5px 14px rgb(99, 165, 190);
+        justify-content: center;
+    
+    }
+    .liveL  p{
+        font-size: 20px;
+    }
+}
+
+
+
+/* ****************************************** TIP *************************************** */
+
+.tipCon{
+
+    height: 200px;
+    border-radius: 7px;
+    width: 80%;
+    margin-top: 5%;
+    box-shadow: 20px 18px 12px rgb(96, 183, 214), 0px -5px 14px rgb(99, 165, 190);
+    justify-content: center;
+
+}
+.tipL{
+    /* border: 1px solid blue; */
+    width: 50%;
+    float:left;
+    height: 200px;
+    margin-bottom: 5%;
+}
+.tipL p{
+    font-size: large;
+}
+.tipR{
+    /* border: 1px solid blue; */
+    width: 40%;
+    float:right;
+    height: 200px;
+    margin-bottom: 5%;
+    justify-content: center;
+    justify-items: center;
+    
+   
+}
+.tipR img{
+    margin-top: 2%;
+    height: 90%;
+    width: 70%;
+    border-radius: 7%;
+    margin-bottom: 2%;
+
+}
+
+.tipCon:hover{
+  
+    box-shadow: 20px 18px 12px var(--a-color), 0px -5px 14px var(--a-color);
+    cursor: pointer;
+
+}
+
+/* **************************************** tip media ****************  */
+
+@media (max-width:  820px ){
+
+
+    .tipCon{
+
+        height: 350px;
+        border-radius: 7px;
+        width: 80%;
+        margin-top: 5%;
+        box-shadow: 20px 18px 12px rgb(96, 183, 214), 0px -5px 14px rgb(99, 165, 190);
+        justify-content: center;
+    
+    }
+
+    .tipR img{
+        margin-top: 2%;
+        height: 90%;
+        width: 99%;
+        border-radius: 7%;
+        margin-bottom: 2%;
+       
+    
+    }
+    .tipR{
+        /* border: 1px solid blue; */
+        width: 40%;
+        float:right;
+        height: 300px;
+        margin-bottom: 5%;
+        margin-right: 2%;
+        justify-content: center;
+        justify-items: center;
+        
+       
+    }
+    
+}
+
+
+
+
+/* ****************************************** ANIMATIONSS /***************************** */
+
+
+  
+  @keyframes moveUpAndDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+  }
+ 
+  .my_website a{
+    float: right;
+    text-decoration: none;
+    border: 5px solid rgb(133, 231, 133);
+    border-radius: 44%;
+    height: 4vh;
+    width: auto;
+  }
+  .my_website {
+    list-style: none;
+    float: right;
+  }
